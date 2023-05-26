@@ -1,11 +1,10 @@
 import Navbar from "../../components/Navbar/Navbar";
 
-function Home(){
-    return(
-        < div  className = "home" >
-
-        < Navbar  />
-        </div>
+function Home() {
+    return (
+        <>
+            < Navbar />
+        </>
     )
 }
 export default Home;
