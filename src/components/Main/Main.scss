@@ -1,0 +1,39 @@
+$color-primary: rgba(0, 102, 153, 0.8);
+$color-primary-light: #ece5ee;
+$border-top: 5px solid #fe9b00;
+$background-color: rgba(0, 102, 153, 0.8);
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  .name{
+    font-size: 2rem;
+    font-weight: 700;
+    color: $color-primary;
+    margin-bottom: 1rem;
+  }
+  .description{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: $color-primary;
+    margin-bottom: 1rem;
+  }
+  .btn{
+    background-color: $color-primary;
+    color: $color-primary-light;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    &:hover {
+      background-color: $color-primary-light;
+      color: $color-primary;
+    }
+  }
+}
