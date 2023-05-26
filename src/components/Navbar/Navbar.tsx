@@ -8,6 +8,7 @@ function Navbar() {
             <ul className="navbar__links">
                 <li className="navbar__link">
                     <i className="fas fa-home"></i>
+                    <a href="#Home"></a>
                 </li>
                 <li className="navbar__link">
                     <i className="fas fa-user"></i>
