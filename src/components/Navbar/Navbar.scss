@@ -1,0 +1,61 @@
+$color-primary: #0f25e6;
+$color-primary-light: #ece5ee;
+$border-top: 5px solid #fe9b00;
+$background-color: rgba(0, 102, 153, 0.8);
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+.navbar {
+    border-top: $border-top;
+    background: $background-color;
+    height: 90px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+  .navbar__logo {
+    color:$color-primary-light;
+    font-weight: 700;
+    margin-left: 2rem;
+    text-transform: uppercase;
+  }
+  .navbar__logo span {
+    color: $color-primary-light;   
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    margin-left: 0.2rem;
+  }
+  .navbar__links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    .navbar__link {
+      color: $color-primary-light;
+      font-size: 1.2rem;
+      font-weight: 500;
+      letter-spacing: 0.1rem;
+      cursor: pointer;
+      font-weight: 800;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      margin-left: 8rem;  
+      margin-bottom: 2rem;    
+      text-decoration: none;     
+      &:hover {
+        color: $color-primary-light;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar {
+    .navbar__logo {
+      font-size: 1.2rem;
+    }
+    .navbar__links {
+      .navbar__link {
+        font-size: 1rem;
+        margin-left: 2rem;
+      }
+    }
+  }
+}
