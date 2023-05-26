@@ -6,9 +6,15 @@ function Navbar() {
             Solu<span>tec</span>
             </h1>
             <ul className="navbar__links">
-                <li className="navbar__link">Sobre</li>
-                <li className="navbar__link">Planos</li>
-                <li className="navbar__link">Contato</li>
+                <li className="navbar__link">
+                    <i className="fas fa-home"></i>
+                </li>
+                <li className="navbar__link">
+                    <i className="fas fa-user"></i>
+                </li>
+                <li className="navbar__link">
+                    <i className="fas fa-envelope"></i>
+                </li>
             </ul>
         </nav>
     )

@@ -27,7 +27,7 @@ $background-color: rgba(0, 102, 153, 0.8);
     list-style: none;
     display: flex;
     align-items: center;
-    justify-content: center;   
+    justify-content: center;
     .navbar__link {
       color: $color-primary-light;
       font-size: 1.2rem;
@@ -37,7 +37,7 @@ $background-color: rgba(0, 102, 153, 0.8);
       font-weight: 800;
       font-family: Georgia, 'Times New Roman', Times, serif;
       margin-left: 8rem;  
-      margin-bottom: 2rem;    
+      margin-bottom: 5rem;    
       text-decoration: none;     
       &:hover {
         color: $color-primary-light;
