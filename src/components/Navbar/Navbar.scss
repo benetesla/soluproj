@@ -1,67 +1,43 @@
-$color-primary: #0f25e6;
-$color-primary-light: #ece5ee;
-$border-top: 5px solid #fe9b00;
-$background-color: rgba(0, 102, 153, 0.8);
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+$background: linear-gradient(
+    180deg,
+    #040a97 1.57%,
+    #d84974 2.24%,
+    #8b5dd7 5.32%,
+    rgba(0, 0, 0, 0) 185.16%
+  ),
+  linear-gradient(90deg, #ffffff 59.35%, rgba(255, 255, 255, 0) 95.35%);
 .navbar {
-    border-top: $border-top;
-    background: $background-color;
-    height: 90px;
-    width: 100%;
-    left: 0;
-    top: 0;
-    position: absolute;
-  .navbar__logo {
-    color:$color-primary-light;
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-  .navbar__logo span {
-    color: $color-primary-light;
-    font-size: 1.5rem;
-    font-weight: 700;
-    letter-spacing: 0.2rem;
-    margin-left: 0.2rem;
-  }
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 80px;
+  width: 100%;
+  background: $background;
+  .navbar__title {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    color: #ece3e3;
   }
   .navbar__links {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    margin-left: auto;
+    width: 500px;
     .navbar__link {
-      color: $color-primary-light;
-      font-size: 1.2rem;
-      font-weight: 500;
-      letter-spacing: 0.1rem;
-      cursor: pointer;
-      font: 100;
-      margin-left: 8rem;  
-      margin-bottom: 2rem;    
-      text-decoration: none;     
-      &:hover {
-        color: $color-primary-light;
-        text-decoration: underline;
-      }
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 19px;
+      color: #ece3e3;
+      padding: 15px;
+      text-decoration: none;
     }
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .navbar {
-    .navbar__logo {
-      font-size: 1.2rem;
-    }
-    .navbar__links {
-      .navbar__link {
-        font-size: 1rem;
-        margin-left: 2rem;
-      }
-    }
+    
+    
   }
 }

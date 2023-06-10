@@ -1,22 +1,22 @@
+import { Browser, House, UploadSimple } from 'phosphor-react';
+import Button from '../Button/Button';
 import './Navbar.scss';
 function Navbar() {
     return (
         <nav className="navbar">
-            <h1 className="navbar__logo">
-            Solu<span>tec</span>
-            </h1>
-            <ul className="navbar__links">
-                <li className="navbar__link">
-                    <i className="fas fa-home"></i>
-                    <a href="#Home"></a>
-                </li>
-                <li className="navbar__link">
-                    <i className="fas fa-user"></i>
-                </li>
-                <li className="navbar__link">
-                    <i className="fas fa-envelope"></i>
-                </li>
-            </ul>
+            <h1 className="navbar__title">ST</h1>
+            <section className="navbar__links">
+                <a href="/" className="navbar__link">
+                    <House size={32} />
+                </a>
+                <a href="/about" className="navbar__link">
+                    <Browser size={32} />
+                </a>
+                <a href="/about" className="navbar__link">
+                    <UploadSimple size={32} />
+                </a>
+               <Button name={'Login'}/>
+            </section>
         </nav>
     )
 

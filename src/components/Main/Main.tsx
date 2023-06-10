@@ -1,18 +1,17 @@
-import "./Main.scss";
-function Main() {
+import Button from '../Button/Button';
+import Card from '../Cards/Card';
+import './Main.scss';
+const Main = () => {
     return (
-        <div className="container" id="#Home">
-            <h1 className="name">
-                Aplicativos sob medida para o seu negócio
-            </h1>
-            <p className="description">
-                Aqui vocë pode encontrar aplicativos sob medida para o seu negécio.
+        <main className="main">
+            <h1 className="main__title">ST</h1>
+            <p className="main__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
             </p>
-            <button className="btn">
-                Saiba mais
-            </button>
-        </div>
+            <Button name={'Get Course'} />
+            <Card />
+        </main>
     )
-
 }
-export default Main;
+
+export default Main
